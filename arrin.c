@@ -20,11 +20,18 @@ int main()
 		}
 		else if(x<a[i])
 		{
-			printf("ans is %d",i);
+		if(a[i]==a[i+1]&&a[i]==a[i+2])
+		{
+			printf("ans is %d",(i+2));
 			break;
+		}
+		else if((a[i]<a[i+1])||(a[i]==a[i+1]))
+		{
+			printf("%d",i);
 		}
 		
 		
+	}
 	}
 		
 	return 0;
